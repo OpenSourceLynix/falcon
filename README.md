@@ -21,6 +21,9 @@ Dashboard (view resources & servers)
 
 Admin (set, add, remove coins/scan eggs & locations)
 
+# Sponsors
+Ko-fi sponsors are not working so come on our [discord](https://www.lynix.tech/discord/join)
+
 # Installation
 
 ### 1. Pterodactyl (Easiest)
