@@ -49,7 +49,7 @@ async function checkAccount(email, username, id) {
               'email': email,
               'username': username,
               "first_name": id,
-              "last_name": 'Palladium User',
+              "last_name": 'Lynix User',
               'password': password
           }, {
               headers: {
