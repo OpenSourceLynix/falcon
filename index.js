@@ -79,5 +79,5 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Start the server
 app.listen(process.env.APP_PORT || 3000, () => {
-  console.log(`Falcon has been started on ${process.env.APP_URL} !`);
+  console.log(`Falcon is running on http://localhost:${process.env.APP_URL} ✅ `);
 });
