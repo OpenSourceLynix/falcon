@@ -32,6 +32,6 @@ Ko-fi sponsors are not working so come on our [discord](https://www.lynix.tech/d
 3. Upload the files
 4. Configure ``.env`` and everything in ``storage`` directory
 
-# Contributions
-Lynix team and others
+# License
+(c) 2024 Lynix and contributors. All rights reserved. Licensed under the MIT License.
 
