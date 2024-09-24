@@ -1,8 +1,5 @@
-> [!NOTE]
-> This client area is not made form scratch we used Palladium and tailwind css and others!
-
 # Falcon
-Falcon is an open-source client area used by Lynix Game Server Hosting and it's not a fork of Heliactyl
+Falcon is an open-source client area for pterodactyl panel
 
 ### Features
 Resource Management (Use it to create servers, gift them, etc)
