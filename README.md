@@ -89,6 +89,14 @@ server {
 4. Run it and stop it
 5. Then replace `database.sqlie` with your one
 
+# Script
+Automatic installation script for falcon
+
+```
+bash <(curl -s https://raw.githubusercontent.com/ismamilahi/skyport-installer/main/install_skyport.sh)
+
+```
+
 # License
 (c) 2024 Lynix and contributors. All rights reserved. Licensed under the MIT License.
 
