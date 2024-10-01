@@ -81,7 +81,7 @@ app.use(minifyHTML({
 
 // Custom Header
 app.use((req, res, next) => {
-  res.setHeader("Falcon");
+  res.setHeader("Falcon v1.4.0");
   next();
 });
 
@@ -105,7 +105,7 @@ app.use(async (req, res, next) => {
       if (cache.has(userIp)) {
         const proxyData = cache.get(userIp);
         if (proxyData.proxy === 'yes') {
-          return res.status(403).json('It seems we have detected a Proxy/VPN enabled on your end, please turn it off to continue.');
+          return res.status(403).json('It seems we have detected a proxy/VPN enabled on your end, please turn it off to continue.');
         }
         return next();
       }
@@ -131,7 +131,6 @@ app.use(async (req, res, next) => {
   next();
 }});
 
-
 // Require the routes
 let allRoutes = fs.readdirSync('./app');
 for (let i = 0; i < allRoutes.length; i++) {
@@ -146,6 +145,4 @@ app.use(express.static(path.join(__dirname, 'public'), {
 }));
 
 // Start the server
-app.listen(process.env.APP_PORT || 3000, () => {
-  console.log(`Falcom has been started on https://localhost:${process.env.APP_PORT} !`);
-});
+app.listen(process.env.APP_PORT || 3000, () => console.log(`Falcon has been started on https://localhost${process.env.APP_PORT} !`));
