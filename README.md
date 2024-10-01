@@ -93,7 +93,7 @@ server {
 Automatic installation script for falcon
 
 ```
-bash <(curl -s https://raw.githubusercontent.com/ismamilahi/skyport-installer/main/install_skyport.sh)
+bash <(curl -s https://raw.githubusercontent.com/OpenSourceLynix/falcon/main/installer.sh)
 
 ```
 
