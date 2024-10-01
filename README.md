@@ -1,3 +1,5 @@
+[Vietnamese](https://github.com/OpenSourceLynix/falcon/blob/main/lang/vn.md) | [Chinese](https://github.com/OpenSourceLynix/falcon/blob/main/lang/cn.md) | [Russian](https://github.com/OpenSourceLynix/falcon/blob/main/lang/ru.md)
+
 # Falcon
 Falcon is an open-source client area for pterodactyl panel
 
@@ -25,7 +27,7 @@ Ko-fi sponsors are not working so come on our [discord](https://www.lynix.tech/d
 
 # Installation
 
-Warning: You need Pterodactyl already setup on a domain for Fixed-Palladium to work
+Warning: You need Pterodactyl already setup on a domain for falcon to work
 1. Upload the file above onto a Pterodactyl NodeJS server [Download the egg from Parkervcp's GitHub Repository](https://github.com/parkervcp/eggs/blob/master/generic/nodejs/egg-node-js-generic.json)
 2. Unarchive the file and set the server to use NodeJS 16
 3. Configure `.env`, `/storage/eggs.json` & `/storage/plans.json` with the scan or manuel
