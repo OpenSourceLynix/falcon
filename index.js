@@ -12,8 +12,6 @@ const fs = require('fs');
 const passport = require('passport');
 const ejs = require('ejs');
 const path = require('path');
-const axios = require('axios');
-const ipaddr = require('ipaddr.js');
 const requestIp = require('request-ip');
 const cache = new Map();
 
@@ -84,52 +82,6 @@ app.use((req, res, next) => {
   res.setHeader("Falcon v1.4.0");
   next();
 });
-
-// VPN detection middleware
-app.use(async (req, res, next) => {
-  if (process.env.PROXYCHECK_KEY && process.env.PROXYCHECK_KEY !== "0000000000000000000000000000") {
-    try {
-      const ipAddress = req.clientIp;
-    
-      if (!ipaddr.isValid(ipAddress)) {
-        console.error(`Invalid IP Address: ${ipAddress}`);
-        return res.status(400).json('Invalid IP address format.');
-      }
-    
-      const userIp = ipaddr.process(ipAddress).toString();
-    
-      if (userIp === '127.0.0.1' || userIp.startsWith('192.168') || userIp.startsWith('10.')) {
-        return next();
-      }
-    
-      if (cache.has(userIp)) {
-        const proxyData = cache.get(userIp);
-        if (proxyData.proxy === 'yes') {
-          return res.status(403).json('It seems we have detected a proxy/VPN enabled on your end, please turn it off to continue.');
-        }
-        return next();
-      }
-    
-      const proxycheck_key = process.env.PROXYCHECK_KEY;
-    
-      const proxyResponse = await axios.get(`http://proxycheck.io/v2/${userIp}?key=${proxycheck_key}`);
-      const proxyData = proxyResponse.data[userIp];
-    
-      cache.set(userIp, proxyData);
-      setTimeout(() => cache.delete(userIp), 600000);
-    
-      if (proxyData.proxy === 'yes') {
-        return res.status(403).json('It seems we have detected a proxy/VPN enabled on your end, please turn it off to continue.');
-      }
-    
-      next();
-    } catch (error) {
-      console.error('Error in IP check middleware:', error);
-      res.status(500).json('Internal server error.');
-    }
-} else {
-  next();
-}});
 
 // Require the routes
 let allRoutes = fs.readdirSync('./app');
