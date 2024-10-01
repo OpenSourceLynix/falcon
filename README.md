@@ -1,3 +1,7 @@
+
+![GitHub commit](https://img.shields.io/github/last-commit/OpenSourceLynix/falcon) ![GitHub Release](https://img.shields.io/github/v/release/OpenSourceLynix/falcon)
+
+
 [Vietnamese](https://github.com/OpenSourceLynix/falcon/blob/main/lang/vn.md) | [Chinese](https://github.com/OpenSourceLynix/falcon/blob/main/lang/cn.md) | [Russian](https://github.com/OpenSourceLynix/falcon/blob/main/lang/ru.md)
 
 # Falcon
