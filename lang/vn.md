@@ -77,11 +77,11 @@ server {
 
 # Cập nhật
 
-1. Sao lưu `database.sqlie` từ bảng điều khiển của bạn
+1. Sao lưu `database.sqlite` từ bảng điều khiển của bạn
 2. Gỡ bỏ bảng điều khiển cũ
 3. Cài đặt bảng điều khiển mới
 4. Chạy nó và dừng lại
-5. Sau đó thay thế `database.sqlie` bằng bản sao lưu của bạn
+5. Sau đó thay thế `database.sqlite` bằng bản sao lưu của bạn
 
 # Giấy phép
 (c) 2024 Lynix và các cộng tác viên. Bảo lưu mọi quyền. Được cấp phép theo Giấy phép MIT.
