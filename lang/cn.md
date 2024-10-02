@@ -76,11 +76,11 @@ server {
 
 # 更新
 
-1. 备份仪表板中的 `database.sqlie`  
+1. 备份仪表板中的 `database.sqlite`  
 2. 删除旧的仪表板  
 3. 安装新的仪表板  
 4. 运行并停止它  
-5. 然后用您的 `database.sqlie` 替换新的文件  
+5. 然后用您的 `database.sqlite` 替换新的文件  
 
 # 许可证
 (c) 2024 Lynix 和贡献者。保留所有权利。根据 MIT 许可证授权。
