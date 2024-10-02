@@ -83,11 +83,11 @@ server {
 
 # Updating
 
-1. Backup `database.sqlie` form your dashboard
+1. Backup `database.sqlite` form your dashboard
 2. Remove old dashboard
 3. Install new dashboard
 4. Run it and stop it
-5. Then replace `database.sqlie` with your one
+5. Then replace `database.sqlite` with your one
 
 
 # License
