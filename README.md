@@ -4,6 +4,10 @@
 
 [Vietnamese](https://github.com/OpenSourceLynix/falcon/blob/main/lang/vn.md) | [Chinese](https://github.com/OpenSourceLynix/falcon/blob/main/lang/cn.md) | [Russian](https://github.com/OpenSourceLynix/falcon/blob/main/lang/ru.md)
 
+> [!CAUTION]
+> Falcon reaches end of life. We recommend to shift to any  other client area because falcon will not be updated any more you can shift to [ixed-Palladium](https//github.com/Overnodeprojects/Fixed-Palladium) this is the base of falcon. If you found out any bugs so fix them by yourself!
+
+
 # Falcon
 Falcon is an open-source client area for pterodactyl panel
 
