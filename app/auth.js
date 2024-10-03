@@ -63,7 +63,7 @@ async function checkAccount(email, username, id, access_token) {
               'username': username,
               'email': email,
               "first_name": id,
-              "last_name": 'Palladium User',
+              "last_name": 'User',
               'password': password
           }, {
               headers: {
