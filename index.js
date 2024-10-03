@@ -81,7 +81,7 @@ app.use(minifyHTML({
 
 // Custom Header
 app.use((req, res, next) => {
-  res.setHeader("");
+  res.setHeader("Falcon");
   next();
 });
 
@@ -160,4 +160,4 @@ async function autoSet() {
 autoSet();
 
 // Start the server
-app.listen(process.env.APP_PORT || 3000, () => console.log(`Falcon has been started on ${process.env.APP_PORT} !`));
+app.listen(process.env.APP_PORT || 3000, () => console.log(`Falcon has been started on http://localhost:${process.env.APP_PORT} !`));
